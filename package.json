@@ -9,8 +9,7 @@
   ],
   "scripts": {
     "build:react": "webpack",
-    "build:blazor": "dotnet publish src/blazor/BlazorChatApp.sln -c Release && node blazor-output.js Release",
-    "build": "npm run build:react && npm run build:blazor",
+    "build": "npm run build:react",
     "start": "node serve.js"
   },
   "private": true,
