@@ -9,7 +9,7 @@ const rimrafAsync = promisify(rimraf);
 const ncpAsync = promisify(ncp);
 
 const run = async (buildConfiguration) => {
-  const publishDir = `${__dirname}/src/blazor/BlazorChatApp/bin/${buildConfiguration}/netstandard2.0/publish/BlazorChatApp/dist`;
+  const publishDir = `${__dirname}/src/blazor/BlazorChatApp/bin/${buildConfiguration}/netstandard2.1/publish/wwwroot`;
   const buildDir = `${__dirname}/build/apps/blazor`;
 
   if (await fsAsync.exists(buildDir)) {
